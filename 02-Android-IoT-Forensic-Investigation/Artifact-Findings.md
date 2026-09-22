@@ -64,6 +64,14 @@ The installed-application examination recorded the following information:
 
 **Forensic significance:** The decoded value provides a timestamp for comparison with other Galaxy S8 artifacts. Its relationship to a specific device event must be established from the source record; the DCode result alone does not identify the event or device operator.
 
+### Figure 7: ezDevice Data Transport Database
+
+![Figure 7: ezDevice RKStorage database](Screenshots/07-Data-Transport-Database.png)
+
+**Figure 7.** Cellebrite Reader examination of the `RKStorage` database within the `com.ezdevice` application directory in the Galaxy S8 Physical evidence dataset. The `catalystLocalStorage` table contains four records, including entries labeled `property`, `user`, and `devices`.
+
+**Forensic significance:** Application database records may provide context about stored settings, account-related information, and device associations. The presence of these records does not, by itself, establish that a particular person operated the application or that data was transmitted to another device.
+
 ## 3. Case-Wide Artifact Search
 
 A case-wide search for `ezdevice` returned **144 results**.
