@@ -17,16 +17,12 @@ The investigation focuses on identifying, examining, and correlating artifacts t
 
 ## Case Documentation
 
-This section will be expanded using the completed iOS lab assignments and their verified results.
-
-| Section | Description |
+| Report | Description |
 |---|---|
-| Evidence and Scope | Evidence source, case objectives, and examination boundaries |
-| Tools and Methods | Tools used and the steps performed |
-| Artifact Analysis | Relevant iOS artifacts and their forensic significance |
-| Findings | Observations supported by the examination |
-| Screenshots | Redacted visual evidence of the analysis |
-| Conclusions | What the evidence supports and any limitations |
+| [Evidence and Scope](Evidence-and-Scope.md) | iPhone X evidence source, examination scope, and limitations |
+| [Examination Methodology](Examination-Methodology.md) | Forensic tools and procedures used to examine the iOS report |
+| [Artifact Findings](Artifact-Findings.md) | SmartLife application, email, network, and SQLite database artifacts |
+| Findings and Limitations | Final investigative conclusions (in progress) |
 
 ## Evidence Handling and Privacy
 
