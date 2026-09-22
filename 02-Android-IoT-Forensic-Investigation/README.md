@@ -20,5 +20,9 @@ evidence sources; and documenting the limitations of the examination.
 
 ## Case Documentation
 
-Investigation reports and appropriately redacted supporting screenshots
-will be added as the Android case findings are documented.
+| Report | Description |
+|---|---|
+| [Evidence and Scope](Evidence-and-Scope.md) | Galaxy S8 evidence source, examination scope, and limitations |
+| [Examination Methodology](Examination-Methodology.md) | Cellebrite Reader examination procedures |
+| [Artifact Findings](Artifact-Findings.md) | ezDevice application, network, cookie, and database findings |
+
