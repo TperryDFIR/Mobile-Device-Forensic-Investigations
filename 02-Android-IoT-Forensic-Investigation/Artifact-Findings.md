@@ -20,6 +20,20 @@ The installed-application examination recorded the following information:
 
 **Forensic significance:** The application metadata establishes that the examined dataset contains an installation record for `ezDevice`. The listed permissions provide context for examining Bluetooth and network-related artifacts, but do not independently establish how the application was used.
 
+## Supporting Forensic Screenshots
+
+### Figure 1: ezDevice Installed Application
+
+![Cellebrite Reader showing the ezDevice installed application](Screenshots/01-ezDevice-Installed-Application.png)
+
+**Figure 1.** Cellebrite Reader examination of the ezDevice application identified in the Galaxy S8 Physical evidence dataset.
+
+### Figure 2: ezDevice Case-Wide Search
+
+![Cellebrite Reader showing case-wide search results for ezDevice](Screenshots/02-ezDevice-Case-Wide-Search.png)
+
+**Figure 2.** Case-wide search results associated with ezDevice, providing leads for further examination across available artifact categories.
+
 ## 3. Case-Wide Artifact Search
 
 A case-wide search for `ezdevice` returned **144 results**.
