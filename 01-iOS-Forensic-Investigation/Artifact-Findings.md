@@ -44,9 +44,9 @@ The following screenshots document the iPhone X portion of the completed iOS and
 
 ![Observations database](Screenshots/04-Observations-Database.png)
 
-**Figure 4.** Examination of the `observations.db` database to identify records relevant to application and device activity.
+**Figure 4.** Cellebrite Reader examination of the Wyze application's `observations.db` database, showing the `OperatingDates` table and associated date records recovered from the iPhone X evidence dataset.
 
-**Forensic significance:** Application metadata can help establish which software was present in the examined device report and identify related artifacts for further examination. The recorded purchase date should not automatically be treated as proof of first use.
+**Forensic significance:** The `observations.db` artifact demonstrates that the iPhone X evidence contains database records associated with another smart-home application, Wyze. The visible `OperatingDates` table provides potential leads for further examination and cross-application correlation. The presence of these records alone does not establish that a particular smart-home device was operated on the listed dates.
 
 ## 2. Case-Wide Artifact Search
 
