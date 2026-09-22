@@ -47,7 +47,7 @@ The Android investigation includes:
 
 ## Forensic Methodology
 
-Each case study will describe the investigative objective, evidence source, tools used, examination process, relevant findings, and limitations. Supporting screenshots will be included where they help demonstrate a procedure or substantiate a finding.
+Each case study documents the investigative objective, evidence source, tools used, examination process, relevant findings, and limitations. Supporting screenshots demonstrate procedures and substantiate documented findings where appropriate.
 
 ## Evidence Handling and Privacy
 
