@@ -104,7 +104,7 @@ The examination identified wireless-network records containing SmartLife-related
 
 The worksheet also records associated BSSID and timestamp information.
 
-**Forensic significance:** Wireless-network artifacts may support investigation of device connectivity and relationships with nearby IoT equipment. A saved or recorded network entry does not, by itself, prove that a particular person operated an IoT device.
+**Forensic significance:** The SmartLife-related wireless-network records provide potential leads for correlating the iPhone X evidence with nearby IoT equipment. Associated BSSID and timestamp information may help distinguish network entries and place them in an investigative timeline. However, the presence of a wireless-network record does not, by itself, establish that the iPhone connected to the network, that a specific IoT device was operated, or that a particular individual performed an action. Those conclusions would require corroborating artifacts.
 
 ## 6. SQLite Database Examination
 
