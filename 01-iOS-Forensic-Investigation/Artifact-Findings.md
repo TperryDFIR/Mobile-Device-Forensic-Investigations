@@ -19,6 +19,8 @@ Cellebrite Reader identified the following SmartLife application information:
 | Recorded purchase date | August 27, 2021, 8:10:16 PM UTC |
 | Listed permissions | HomeKit, Bluetooth, and Camera |
 
+**Forensic significance:** The SmartLife application record identifies the application name, version, bundle identifier, recorded purchase date, and listed permissions within the iPhone X evidence dataset. These details may support application identification and timeline development. The recorded purchase date does not independently establish when the application was installed on the examined device or when it was last used.
+
 ## Supporting Forensic Screenshots
 
 The following screenshots document the iPhone X portion of the completed iOS and Android IoT evidence lab, using Cellebrite Reader to examine SmartLife application artifacts.
@@ -39,6 +41,8 @@ The following screenshots document the iPhone X portion of the completed iOS and
 ![SmartLife database search](Screenshots/03-SmartLife-Database-Search.png)
 
 **Figure 3.** Cellebrite Reader examination of the Smart Life application's `Cache.db` database within the iPhone X file-system extraction, showing database metadata and accessible tables for further artifact analysis.
+
+**Forensic significance:** The identification of `Cache.db` provides a database-level lead for examining SmartLife application data. Its metadata and table structure can guide further analysis, but the presence of the database alone does not establish that a particular IoT device was operated or that a specific user action occurred.
 
 ### Figure 4: Observations Database Examination
 
@@ -71,7 +75,7 @@ The completed worksheet describes these as registration-verification emails asso
 
 The emails are presented in the order recorded in the completed worksheet rather than chronological order.
 
-| Email | Recorded timestamp (UTC) |
+| Email | Recorded Timestamp (UTC) |
 |---|---|
 | 1 | May 25, 2021, 3:08:13 AM |
 | 2 | April 3, 2022, 7:33:19 PM |
@@ -112,7 +116,7 @@ Searching the database artifacts for `smartlife` returned **five databases**.
 
 The examination included `observations.db` and its:
 
-- `Operating Dates` table
+- `OperatingDates` table
 - `Observed Domains` table
 
 The `Observed Domains` examination included a `lastSeen` value for `amazonaws.com`. Using DCode with the **Unix: Millisecond Value** format, the worksheet records the decoded timestamp as:
