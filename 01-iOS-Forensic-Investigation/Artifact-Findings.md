@@ -38,7 +38,7 @@ The following screenshots document the iPhone X portion of the completed iOS and
 
 ![SmartLife database search](Screenshots/03-SmartLife-Database-Search.png)
 
-**Figure 3.** Database examination identifying SQLite databases associated with SmartLife artifacts.
+**Figure 3.** Cellebrite Reader examination of the Smart Life application's `Cache.db` database within the iPhone X file-system extraction, showing database metadata and accessible tables for further artifact analysis.
 
 ### Figure 4: Observations Database Examination
 
