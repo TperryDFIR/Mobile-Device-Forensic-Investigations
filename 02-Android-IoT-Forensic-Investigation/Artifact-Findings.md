@@ -60,9 +60,9 @@ The installed-application examination recorded the following information:
 
 ![Figure 6: DCode decoded timestamp result](Screenshots/06-DCode-Decode-Result.png)
 
-**Figure 6.** DCode output showing the decoded timestamp associated with the examined artifact.
+**Figure 6.** DCode v4.02 decoding a Unix millisecond timestamp using a UTC 00:00 offset. The displayed result is April 17, 2023, at 20:01:14.468 UTC.
 
-**Forensic significance:** Timestamp decoding helps place artifacts into a consistent investigative timeline. The examiner must verify the source timestamp format, conversion settings, and time zone before correlating the result with other device records.
+**Forensic significance:** The decoded value provides a timestamp for comparison with other Galaxy S8 artifacts. Its relationship to a specific device event must be established from the source record; the DCode result alone does not identify the event or device operator.
 
 ## 3. Case-Wide Artifact Search
 
