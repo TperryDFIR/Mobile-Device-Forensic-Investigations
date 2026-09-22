@@ -21,8 +21,7 @@ Cellebrite Reader identified the following SmartLife application information:
 
 ## Supporting Forensic Screenshots
 
-The following screenshots were extracted from the completed iOS and Android IoT evidence lab. They document the examination of SmartLife application artifacts using Cellebrite Reader.
-
+“The following screenshots document the iPhone X portion of the completed iOS and Android IoT evidence lab, using Cellebrite Reader to examine SmartLife application artifacts.”
 ### Figure 1: SmartLife Installed Application
 
 ![SmartLife installed application](Screenshots/01-SmartLife-Installed-Application.png)
