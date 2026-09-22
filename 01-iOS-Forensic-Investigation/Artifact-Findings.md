@@ -11,7 +11,7 @@ The findings below are based on the completed Lab 8.1 iOS IoT Evidence examinati
 
 Cellebrite Reader identified the following SmartLife application information:
 
-| Artifact | Finding |
+\| Artifact \| Finding \|
 |---|---|
 | Application | SmartLife |
 | Version | 5.5.4 |
@@ -75,7 +75,7 @@ The completed worksheet describes these as registration-verification emails asso
 
 The emails are presented in the order recorded in the completed worksheet rather than chronological order.
 
-| Email | Recorded Timestamp (UTC) |
+\| Email \| Recorded Timestamp (UTC) \|
 |---|---|
 | 1 | May 25, 2021, 3:08:13 AM |
 | 2 | April 3, 2022, 7:33:19 PM |
@@ -89,7 +89,7 @@ The emails are presented in the order recorded in the completed worksheet rather
 
 The worksheet records the following information from the first numerically listed log entry:
 
-| Field | Finding |
+\| Field \| Finding \|
 |---|---|
 | Timestamp | July 9, 2024, 6:30:01 PM UTC |
 | Source | `iphoneNetworkDataUsage` |
