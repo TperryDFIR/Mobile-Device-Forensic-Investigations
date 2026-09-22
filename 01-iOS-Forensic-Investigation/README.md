@@ -2,9 +2,11 @@
 
 ## Investigation Overview
 
-This case study documents hands-on examination of iOS forensic evidence as part of a mobile device forensics portfolio.
+This case study documents the examination of an existing iPhone X full file system forensic report using Cellebrite Reader.
 
-The investigation focuses on identifying, examining, and correlating artifacts that may help reconstruct device activity. Findings will be supported by documented forensic procedures, relevant tool output, and appropriately redacted screenshots.
+The investigation focuses on SmartLife application artifacts, registration-related emails, wireless-network records, application databases, and timestamp analysis. Findings are supported by documented examination procedures and selected forensic screenshots.
+
+The examination was performed using an existing forensic report; the original device acquisition was not performed as part of this documented investigation.
 
 ## Key Evidence Examined
 
@@ -40,19 +42,19 @@ These findings provide leads for timeline reconstruction and cross-artifact corr
 | Report | Description |
 |---|---|
 | [Evidence and Scope](Evidence-and-Scope.md) | iPhone X evidence source, examination scope, and limitations |
-| [Examination Methodology](Examination-Methodology.md) | Forensic tools and procedures used to examine the iOS report |
-| [Artifact Findings](Artifact-Findings.md) | SmartLife application, email, network, and SQLite database artifacts |
-| [Findings and Limitations](Findings-and-Limitations.md) | Final investigative conclusions and examination limitations |
+| [Examination Methodology](Examination-Methodology.md) | Cellebrite Reader examination procedures |
+| [Artifact Findings](Artifact-Findings.md) | SmartLife application, email, network, database, and timestamp findings |
+| [Findings and Limitations](Findings-and-Limitations.md) | Investigative conclusions and examination limitations |
 
 ## Featured Evidence Screenshots
 
 The following screenshots document selected findings from the iPhone X evidence examination using Cellebrite Reader.
 
-| Figure | Evidence demonstrated |
+| Figure | Evidence Demonstrated |
 |---|---|
-| [1. SmartLife Installed Application](Screenshots/01-SmartLife-Installed-Application.png) | Installed-application metadata |
-| [2. SmartLife Case-Wide Search](Screenshots/02-SmartLife-Case-Wide-Search.png) | Search results across artifact categories |
-| [3. SmartLife Database Search](Screenshots/03-SmartLife-Database-Search.png) | Identification of application-related SQLite databases |
+| [1. SmartLife Installed Application](Screenshots/01-SmartLife-Installed-Application.png) | Installed-application metadata and permissions |
+| [2. SmartLife Case-Wide Search](Screenshots/02-SmartLife-Case-Wide-Search.png) | 1,213 SmartLife-related search results |
+| [3. SmartLife Database Search](Screenshots/03-SmartLife-Database-Search.png) | SmartLife `Cache.db` examination |
 | [4. Wyze Observations Database](Screenshots/04-Observations-Database.png) | Examination of `observations.db` and its `OperatingDates` table |
 
 For the analysis and interpretation of these screenshots, see the
