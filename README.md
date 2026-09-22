@@ -2,9 +2,11 @@
 
 ## Project Overview
 
-This portfolio documents hands-on mobile device forensic investigations involving iOS and Android evidence, forensic extraction methods, application artifacts, SQLite databases, and cross-device evidence correlation.
+This portfolio documents hands-on forensic examinations of existing iOS and Android mobile device evidence, focusing on application artifacts, SQLite databases, network records, IoT-related activity, and forensic timeline analysis.
 
-The investigations demonstrate how mobile device data can be identified, examined, interpreted, and documented using forensic tools and repeatable investigative procedures.
+The investigations demonstrate how mobile device evidence can be examined, interpreted, correlated, and documented using Cellebrite Reader, DCode, and repeatable forensic examination procedures.
+
+The documented examinations used provided forensic datasets. Original device acquisition was not performed as part of these case studies.
 
 ## Investigation Objectives
 
@@ -19,29 +21,46 @@ The investigations demonstrate how mobile device data can be identified, examine
 
 | Tool or Technology | Investigative Purpose |
 |---|---|
-| Cellebrite Reader | Review mobile extraction data and examine application, device, and network artifacts |
-| DCode | Decode timestamps for forensic timeline analysis |
-| Magnet AXIOM | Mobile artifact examination and correlation |
-| DB Browser for SQLite | SQLite database examination |
-| SQLiteStudio | Database inspection and query analysis |
-| iOS and Android artifacts | Mobile operating system and application analysis |
+| Cellebrite Reader | Examine mobile forensic reports and identify application, device, network, and database artifacts |
+| DCode | Interpret encoded timestamps for forensic timeline analysis |
+| SQLite databases | Examine application-specific records and stored artifacts |
+| iOS forensic artifacts | Investigate iPhone application, email, network, and database evidence |
+| Android forensic artifacts | Investigate application, cookie, network, database, and IoT-related evidence |
 
 ## Investigation Documentation
 
-| Investigation | Focus | Documentation |
+| Investigation | Evidence Examined | Case Study |
 |---|---|---|
-| iOS Forensic Investigation | iPhone extraction methods and forensic artifact examination | [View iOS Investigation](01-iOS-Forensic-Investigation/) |
-| Android and IoT Forensic Investigation | Galaxy S8 application, cookie, network, database, device, and timestamp artifacts | [View Android Investigation](02-Android-IoT-Forensic-Investigation/) |
+| iOS Forensic Investigation | iPhone X SmartLife application, registration emails, wireless-network records, SQLite databases, and timestamp artifacts | [View iOS Investigation](01-iOS-Forensic-Investigation/README.md) |
+| Android and IoT Forensic Investigation | Galaxy S8 ezDevice application, cookie, network, database, IoT device, and timestamp artifacts | [View Android Investigation](02-Android-IoT-Forensic-Investigation/README.md) |
 
 ### Android and IoT Case Study
 
+### iOS Forensic Investigation
+
+The iOS investigation includes:
+
+- Examination of an existing iPhone X full file system forensic report
+- SmartLife installed-application metadata and permissions
+- Case-wide search identifying 1,213 SmartLife-related results
+- Registration-related email and wireless-network artifacts
+- SmartLife and Wyze SQLite database examination
+- DCode timestamp interpretation
+- Supporting Cellebrite Reader screenshots and documented examination limitations
+
+[Read the iOS Artifact Findings](01-iOS-Forensic-Investigation/Artifact-Findings.md)
+
+### Android and IoT Forensic Investigation
+
 The Android investigation includes:
 
-- Evidence source, scope, and examination limitations
-- Cellebrite Reader examination methodology
-- Documented application, cookie, network, and database artifacts
-- DCode timestamp analysis
-- Redacted screenshots supporting the findings
+- Examination of an existing Samsung Galaxy S8 forensic dataset
+- ezDevice application identification and artifact searches
+- Cookie and application-related database examination
+- Network-usage artifact analysis
+- ezOutlet2 IoT device and network configuration records
+- DCode timestamp interpretation
+- Redacted screenshots supporting documented forensic findings
 
 [Read the Android Artifact Findings](02-Android-IoT-Forensic-Investigation/Artifact-Findings.md)
 
