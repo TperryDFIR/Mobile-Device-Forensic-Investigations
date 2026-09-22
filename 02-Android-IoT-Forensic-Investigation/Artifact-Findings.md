@@ -128,14 +128,17 @@ The examination recorded the following details for network-usage result **#606**
 
 | Field          | Recorded finding        |
 | -------------- | ----------------------- |
-| SSID           | `Cody WIFI`             |
+| SSID | `Cody Wifi` |
 | Bytes received | 1,391                   |
 | Bytes sent     | 834                     |
 | Application ID | `com.google.android.gm` |
 
 **Important distinction:** The application ID in this network-usage record does **not** match the `ezDevice` identifier, `com.ezdevice`. The record should therefore not be presented as proof that `ezDevice` transferred those bytes.
 
-The start and end dates in the worksheet contain an apparent year-formatting error (`6//6/204`). Those dates should be verified against the original Cellebrite display before inclusion in a public timeline.
+The original Cellebrite Reader display records a network-usage window
+from June 6, 2024, 6:00 AM to 8:00 AM UTC. The examination worksheet
+contains an apparent date-formatting error (`6//6/204`); the dates
+reported here follow the displayed forensic artifact.
 
 ## 6. Application Database: Data Transport Events
 
@@ -169,7 +172,7 @@ The `devices` object contained an `info` record with the following selected find
 | -------------------- | ------------------------------ |
 | Online status        | `True`                         |
 | Device type          | `ezOutlet2`                    |
-| Hostname             | `EZT-033010`                   |
+| Hostname | Redacted for public documentation |
 | Recorded system time | April 17, 2023, 8:07:24 PM UTC |
 
 The worksheet also recorded device identifiers and WAN/LAN network configuration values. Those details can support correlation between application records and the associated IoT device; unnecessary identifiers are omitted here.
