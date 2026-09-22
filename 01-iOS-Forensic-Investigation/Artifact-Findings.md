@@ -69,6 +69,8 @@ The search identified **five emails** containing `smartlife`.
 
 The completed worksheet describes these as registration-verification emails associated with different applications.
 
+The emails are presented in the order recorded in the completed worksheet rather than chronological order.
+
 | Email | Recorded timestamp (UTC) |
 |---|---|
 | 1 | May 25, 2021, 3:08:13 AM |
@@ -77,7 +79,7 @@ The completed worksheet describes these as registration-verification emails asso
 | 4 | February 1, 2024, 10:07:27 PM |
 | 5 | February 1, 2024, 10:29:46 PM |
 
-**Forensic significance:** Verification emails may help establish an application-registration timeline. Their presence alone does not establish that a particular individual completed each registration.
+**Forensic significance:** Verification emails may help establish a timeline of application-registration activity. The recorded email timestamps provide temporal reference points but do not necessarily establish when an account was created, when a message was read, or whether a registration was completed. The presence of these emails alone does not establish that a particular individual completed each registration.
 
 ## 4. Application and Network Log Artifacts
 
@@ -90,7 +92,7 @@ The worksheet records the following information from the first numerically liste
 | WAN In | 8,218 |
 | WAN Out | 3,514 |
 
-**Forensic significance:** Network-usage records can provide additional context about application-related activity. These values should not be interpreted as the contents of transmitted communications.
+**Forensic significance:** The `iphoneNetworkDataUsage` record provides a timestamped network-usage artifact that may support further examination of device or application activity. The WAN In and WAN Out values should be interpreted according to the units and context established by the source artifact. These values do not reveal the contents of communications or, by themselves, prove that SmartLife transmitted data at the recorded time.
 
 ## 5. Wireless Network Artifacts
 
