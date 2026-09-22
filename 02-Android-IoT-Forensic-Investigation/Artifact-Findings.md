@@ -88,6 +88,14 @@ The installed-application examination recorded the following information:
 
 **Forensic significance:** This artifact provides device-configuration and network information that may support correlation with other Android and IoT evidence. The record reports `online = True`, identifies the device type as `ezOutlet2`, and includes a system timestamp of April 17, 2023, at 8:07:24 PM UTC. The presence of these fields does not independently establish who operated the device, whether it was reachable during the forensic examination, or whether a network connection occurred at that timestamp.
 
+### Figure 10: ezOutlet2 Network Settings
+
+![Figure 10: Redacted ezOutlet2 network settings](Screenshots/10-ezOutlet2-Network-Settings-redacted.png)
+
+**Figure 10.** Cellebrite Reader serialized-data view of network settings associated with an ezOutlet2 device record in the Galaxy S8 Physical evidence dataset. The record includes automatic DNS and DHCP settings, gateway and DNS fields, a hostname, an HTTP port, an IP address, a subnet mask, and timestamps. Network addresses and the hostname have been redacted for public documentation.
+
+**Forensic significance:** This artifact documents stored network configuration information that may help correlate the ezOutlet2 record with other Android and IoT evidence. The visible settings indicate `autoDns = True`, `dhcpEnabled = True`, and `httpPort = 80`. The record also contains timestamps dated April 17, 2023, which may assist with timeline analysis. These settings alone do not establish that a connection occurred, that the device was reachable during the examination, or who configured it.
+
 ## 3. Case-Wide Artifact Search
 
 A case-wide search for `ezdevice` returned **144 results**.
