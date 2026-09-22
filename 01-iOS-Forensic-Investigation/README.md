@@ -6,6 +6,26 @@ This case study documents hands-on examination of iOS forensic evidence as part 
 
 The investigation focuses on identifying, examining, and correlating artifacts that may help reconstruct device activity. Findings will be supported by documented forensic procedures, relevant tool output, and appropriately redacted screenshots.
 
+## Key Evidence Examined
+
+This investigation examined an existing iPhone X full file system report using Cellebrite Reader. The analysis focused on SmartLife and related mobile and IoT artifacts.
+
+The documented findings include:
+
+- SmartLife application metadata and listed permissions
+- A case-wide search returning 1,213 SmartLife-related results
+- Registration-verification email artifacts
+- Application and network-usage records
+- SmartLife-related wireless-network records
+- SQLite database artifacts associated with SmartLife and Wyze
+- Timestamp interpretation using DCode
+
+These findings provide leads for timeline reconstruction and cross-artifact correlation. Individual records do not independently prove device operation or identify the person responsible for an action.
+
+## Detailed Findings
+
+[View the iOS Artifact Findings](Artifact-Findings.md)
+
 ## Investigation Objectives
 
 - Identify the available iOS evidence and its source.
