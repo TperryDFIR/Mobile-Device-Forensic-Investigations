@@ -19,6 +19,34 @@ Cellebrite Reader identified the following SmartLife application information:
 | Recorded purchase date | August 27, 2021, 8:10:16 PM UTC |
 | Listed permissions | HomeKit, Bluetooth, and Camera |
 
+## Supporting Forensic Screenshots
+
+The following screenshots were extracted from the completed iOS and Android IoT evidence lab. They document the examination of SmartLife application artifacts using Cellebrite Reader.
+
+### Figure 1: SmartLife Installed Application
+
+![SmartLife installed application](Screenshots/01-SmartLife-Installed-Application.png)
+
+**Figure 1.** Cellebrite Reader examination of the SmartLife application installed on the iPhone X evidence dataset.
+
+### Figure 2: SmartLife Case-Wide Search
+
+![SmartLife case-wide search](Screenshots/02-SmartLife-Case-Wide-Search.png)
+
+**Figure 2.** Case-wide search identifying 1,213 results associated with SmartLife, providing leads for further examination of application and device activity.
+
+### Figure 3: SmartLife Database Identification
+
+![SmartLife database search](Screenshots/03-SmartLife-Database-Search.png)
+
+**Figure 3.** Database examination identifying SQLite databases associated with SmartLife artifacts.
+
+### Figure 4: Observations Database Examination
+
+![Observations database](Screenshots/04-Observations-Database.png)
+
+**Figure 4.** Examination of the `observations.db` database to identify records relevant to application and device activity.
+
 **Forensic significance:** Application metadata can help establish which software was present in the examined device report and identify related artifacts for further examination. The recorded purchase date should not automatically be treated as proof of first use.
 
 ## 2. Case-Wide Artifact Search
