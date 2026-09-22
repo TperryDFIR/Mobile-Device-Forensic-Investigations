@@ -1,0 +1,111 @@
+# Android IoT Artifact Findings
+
+## 1. Evidence Source
+
+This case study documents findings recorded during examination of the **Galaxy S8 Physical** dataset using Cellebrite Reader. The investigation focused on Android application artifacts and records associated with the `ezDevice` application and an IoT device.
+
+The findings below are drawn from the completed Lab 8 examination worksheet. They describe artifacts present in the supplied forensic dataset, not a live examination of an independently acquired device.
+
+## 2. Installed Application: ezDevice
+
+The installed-application examination recorded the following information:
+
+| Field                  | Recorded finding               |
+| ---------------------- | ------------------------------ |
+| Application            | ezDevice                       |
+| Version                | 4.0.0a                         |
+| Recorded purchase date | April 17, 2023, 6:05:36 PM UTC |
+| Application identifier | `com.ezdevice`                 |
+| Listed permissions     | Bluetooth / Network            |
+
+**Forensic significance:** The application metadata establishes that the examined dataset contains an installation record for `ezDevice`. The listed permissions provide context for examining Bluetooth and network-related artifacts, but do not independently establish how the application was used.
+
+## 3. Case-Wide Artifact Search
+
+A case-wide search for `ezdevice` returned **144 results**.
+
+The completed worksheet identified results under these categories:
+
+* Location Related
+* Device Locations
+* Locations
+* Search and Web
+* Cookies
+
+**Forensic significance:** These search results provide investigative leads across multiple artifact categories. A search hit alone does not establish that every returned record was generated directly by the `ezDevice` application.
+
+## 4. Cookie Artifact
+
+The worksheet recorded a cookie with the following details:
+
+| Field           | Recorded finding                 |
+| --------------- | -------------------------------- |
+| Domain          | `google.com`                     |
+| Creation time   | April 17, 2023, 8:01:53 PM UTC   |
+| Expiration time | October 17, 2023, 8:01:50 PM UTC |
+
+**Forensic significance:** The cookie provides a timestamped web artifact that may be compared with other application and device events. Its presence alone does not establish the purpose of the associated browsing activity.
+
+## 5. Network-Usage Artifact
+
+The examination recorded the following details for network-usage result **#606**:
+
+| Field          | Recorded finding        |
+| -------------- | ----------------------- |
+| SSID           | `Cody WIFI`             |
+| Bytes received | 1,391                   |
+| Bytes sent     | 834                     |
+| Application ID | `com.google.android.gm` |
+
+**Important distinction:** The application ID in this network-usage record does **not** match the `ezDevice` identifier, `com.ezdevice`. The record should therefore not be presented as proof that `ezDevice` transferred those bytes.
+
+The start and end dates in the worksheet contain an apparent year-formatting error (`6//6/204`). Those dates should be verified against the original Cellebrite display before inclusion in a public timeline.
+
+## 6. Application Database: Data Transport Events
+
+The examination identified the database:
+
+`/data/Root/data/com.ezdevice/databases/com.google.android.datatransport.events`
+
+Within `global_log_event_state`, the worksheet recorded:
+
+| Field                 | Recorded finding                        |
+| --------------------- | --------------------------------------- |
+| Field name            | `last_metrics_upload_ms`                |
+| Stored value          | `1681761674468`                         |
+| Recorded decoded date | April 17, 2023, approximately 20:01 UTC |
+
+**Forensic significance:** The database contains a stored metrics-upload timestamp that may assist with timeline reconstruction. The timestamp should not be treated as proof that an IoT command was issued or that a particular person operated the device.
+
+## 7. Application Database: RKStorage
+
+The examination identified:
+
+`/data/Root/data/com.ezdevice/databases/RKStorage`
+
+The `catalystLocalStorage` records included keys named `property`, `user`, and `devices`.
+
+The `user` object contained account-related configuration information, including a username, password field, login setting, and application version information. **Account credentials and other sensitive values are intentionally omitted from this public case study.**
+
+The `devices` object contained an `info` record with the following selected findings:
+
+| Field                | Recorded finding               |
+| -------------------- | ------------------------------ |
+| Online status        | `True`                         |
+| Device type          | `ezOutlet2`                    |
+| Hostname             | `EZT-033010`                   |
+| Recorded system time | April 17, 2023, 8:07:24 PM UTC |
+
+The worksheet also recorded device identifiers and WAN/LAN network configuration values. Those details can support correlation between application records and the associated IoT device; unnecessary identifiers are omitted here.
+
+The `settings → network` object recorded a device IP address that matched the `lanIP` value in the `info` object.
+
+**Forensic significance:** `RKStorage` provides application-level evidence of a configured `ezOutlet2` device and related account and network settings. The recorded online status describes a value stored in the dataset, not the device’s current availability.
+
+## 8. Findings and Limitations
+
+The Galaxy S8 dataset contains multiple artifact types relevant to the `ezDevice` application, including installation metadata, search results, cookie records, database entries, and IoT device configuration information.
+
+The `RKStorage` records provide a particularly useful basis for correlating the application with an `ezOutlet2` device. However, the available findings do not independently establish who operated that device or what physical actions it performed.
+
+This public report omits passwords, account identifiers, and unnecessary device-specific identifiers. The original assignment and forensic evidence should be retained separately from the public GitHub portfolio.
