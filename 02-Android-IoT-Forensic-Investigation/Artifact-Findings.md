@@ -42,6 +42,14 @@ The installed-application examination recorded the following information:
 
 **Forensic significance:** The cookie record identifies a source, domain, and timestamps that may support correlation of application and web artifacts. Its presence alone does not establish user attribution or prove a specific browsing action.
 
+### Figure 4: Android Wireless Network Usage
+
+![Figure 4: Android wireless network usage](Screenshots/04-Android-Network-Usage.png)
+
+**Figure 4.** Cellebrite Reader network-usage artifact from the Galaxy S8 Physical evidence dataset. The record identifies the wireless network as `Cody Wifi` and shows a usage window from June 6, 2024, 6:00 AM to 8:00 AM UTC. It records 1,391 bytes received and 834 bytes sent, with background usage indicated.
+
+**Forensic significance:** This artifact provides a timestamped record of wireless network activity that may support timeline reconstruction. The recorded byte counts do not reveal communication contents, identify the device operator, or independently establish that the ezDevice application generated the traffic.
+
 ## 3. Case-Wide Artifact Search
 
 A case-wide search for `ezdevice` returned **144 results**.
