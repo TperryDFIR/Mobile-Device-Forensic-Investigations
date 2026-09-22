@@ -17,14 +17,20 @@ The examination forms part of a broader mobile device forensic investigation inv
 
 ## Examination Scope
 
-The iOS examination focuses on identifying and interpreting artifacts available within the supplied forensic dataset.
+The iOS examination focused on identifying and interpreting artifacts available within the supplied iPhone X forensic dataset.
 
-Areas of examination include:
+Areas of examination included:
 
-- Application-related artifacts
-- Device and user-activity records
-- Relevant timestamps and log entries
-- Correlation of artifacts within the available evidence
+- SmartLife installed-application metadata and permissions
+- Case-wide searches for SmartLife-related artifacts
+- Registration-verification email records
+- Application and network-usage log entries
+- SmartLife-related wireless-network records
+- SQLite databases associated with SmartLife and Wyze
+- Timestamp interpretation using DCode
+- Correlation of findings across available evidence sources
+
+The examination was limited to artifacts accessible within the provided Cellebrite Reader report.
 
 ## Examination Limitations
 
@@ -34,4 +40,9 @@ The public portfolio will not contain the original dataset, credentials, private
 
 ## Supporting Documentation
 
-Detailed procedures, verified findings, and redacted screenshots will be added in subsequent investigation reports.
+The following reports document the examination procedures, artifact findings, investigative conclusions, and supporting screenshots:
+
+- [Examination Methodology](Examination-Methodology.md)
+- [Artifact Findings](Artifact-Findings.md)
+- [Findings and Limitations](Findings-and-Limitations.md)
+- [Supporting Screenshots](Screenshots/README.md)
