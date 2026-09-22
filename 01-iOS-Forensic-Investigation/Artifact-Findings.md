@@ -121,7 +121,7 @@ The `Observed Domains` examination included a `lastSeen` value for `amazonaws.co
 
 A separate search for `feit` returned **two databases**.
 
-**Forensic significance:** Database records can provide application-specific context that may not be visible in Cellebrite Reader’s higher-level artifact categories. Decoding stored timestamps helps place records into a consistent investigative timeline.
+**Forensic significance:** The database examination demonstrates how application-specific SQLite records can provide investigative context beyond Cellebrite Reader's higher-level artifact categories. The `observations.db` examination identified records associated with Wyze, while separate searches identified SmartLife- and Feit-related database results. Decoding the `lastSeen` value for `amazonaws.com` provided a timestamp that may assist with timeline development. However, a domain record or decoded timestamp does not independently establish which application generated the activity, who performed it, or whether a particular IoT device was operated.
 
 ## 7. Findings and Limitations
 
@@ -132,3 +132,5 @@ This case study documents findings from an existing Cellebrite Reader report. It
 The recorded timestamps should be interpreted with attention to their displayed time zone. The lab instructions specifically caution that some timestamps may not convert automatically.
 
 No raw mobile extraction, private communications, account credentials, or unredacted personal information are included in this public portfolio.
+
+**Investigative conclusion:** The examination identified multiple artifact categories that could support further investigation of mobile application and IoT-related activity, including installed-application metadata, registration-related emails, wireless-network records, network-usage logs, and SQLite database entries. These artifacts provide opportunities for timeline reconstruction and cross-source correlation. The findings should be interpreted within the limits of the available extraction and should not be treated as independent proof of device operation, user attribution, or the contents of network communications.
