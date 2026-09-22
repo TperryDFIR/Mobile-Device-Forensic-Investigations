@@ -61,7 +61,7 @@ The worksheet identified these result categories:
 - Log Entries
 - Wireless Networks
 
-**Forensic significance:** Searching across artifact categories provides a way to correlate application records with communications, usage data, and network information.
+**Forensic significance:** The 1,213 results represent case-wide search matches for `smartlife`, not 1,213 confirmed application launches or smart-home device interactions. Searching across artifact categories provides investigative leads that may be correlated with application records, communications, usage data, and network information.
 
 ## 3. Email Artifacts
 
