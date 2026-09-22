@@ -44,3 +44,20 @@ See [Artifact Findings](Artifact-Findings.md) for screenshots, detailed observat
 | [Examination Methodology](Examination-Methodology.md) | Cellebrite Reader examination procedures |
 | [Artifact Findings](Artifact-Findings.md) | Android and IoT application, cookie, network, database, and timestamp findings |
 
+## Investigation Summary
+
+This examination demonstrated the use of Cellebrite Reader and DCode to identify, review, and document Android and IoT-related forensic artifacts from the Galaxy S8 Physical evidence dataset.
+
+The analysis identified application-related records, a case-wide search result set, a cookie artifact, wireless network-usage data, serialized account-configuration fields, and ezOutlet2 device and network settings. Timestamp conversion provided an additional opportunity to compare recorded times across artifacts.
+
+The findings illustrate how application databases, device records, network information, and timestamps can contribute to a broader forensic investigation when interpreted together.
+
+## Examination Limitations
+
+- The documented findings are based on the artifacts examined and do not represent every item in the evidence dataset.
+- A stored account record does not establish that authentication succeeded or identify the person who used the account.
+- Device configuration and network-usage records do not independently prove that a specific application generated traffic.
+- Timestamps require interpretation in the context of their source, format, and associated event.
+- Sensitive credentials, account identifiers, and network identifiers have been redacted from public screenshots.
+
+The original evidence and unredacted investigative material should remain separate from this public portfolio.
