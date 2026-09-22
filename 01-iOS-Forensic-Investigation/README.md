@@ -25,6 +25,28 @@ The investigation focuses on identifying, examining, and correlating artifacts t
 | Findings and Limitations | Final investigative conclusions (in progress) |
 | [Findings and Limitations](Findings-and-Limitations.md) | Final investigative conclusions and examination limitations |
 
+## Featured Evidence Screenshots
+
+The following screenshots document selected findings from the iPhone X evidence examination using Cellebrite Reader.
+
+| Figure | Evidence demonstrated |
+|---|---|
+| [1. SmartLife Installed Application](Screenshots/01-SmartLife-Installed-Application.png) | Installed-application metadata |
+| [2. SmartLife Case-Wide Search](Screenshots/02-SmartLife-Case-Wide-Search.png) | Search results across artifact categories |
+| [3. SmartLife Database Search](Screenshots/03-SmartLife-Database-Search.png) | Identification of application-related SQLite databases |
+| [4. Wyze Observations Database](Screenshots/04-Observations-Database.png) | Examination of `observations.db` and its `OperatingDates` table |
+
+For the analysis and interpretation of these screenshots, see the
+[Artifact Findings report](Artifact-Findings.md).
+
+## Investigative Conclusion
+
+The examination identified installed-application metadata, registration-related
+emails, network records, and SQLite database artifacts that may support timeline
+reconstruction and cross-source correlation. The findings are limited to the
+available iPhone X evidence and do not independently establish user attribution
+or operation of a particular IoT device.
+
 ## Evidence Handling and Privacy
 
 Original forensic evidence, extracted personal information, account credentials, and unredacted private communications are excluded from this public repository.
