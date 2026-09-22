@@ -72,6 +72,14 @@ The installed-application examination recorded the following information:
 
 **Forensic significance:** Application database records may provide context about stored settings, account-related information, and device associations. The presence of these records does not, by itself, establish that a particular person operated the application or that data was transmitted to another device.
 
+### Figure 8: RKStorage Account Configuration Artifact
+
+![Figure 8: Redacted RKStorage account configuration](Screenshots/08-RKStorage-Account-redacted.png)
+
+**Figure 8.** Cellebrite Reader serialized-data view of an RKStorage account configuration artifact recovered from the Galaxy S8 Physical evidence dataset. The record includes fields for `serverOption`, `access_token`, `username`, `password`, and `keeplogin`. Credential values and the identifying portion of the username have been redacted for public documentation.
+
+**Forensic significance:** The artifact demonstrates that account configuration information was present in the examined application data. The field names indicate that the record contained authentication-related information, but the screenshot alone does not establish whether the credentials remained valid, whether a login succeeded, or who operated the account.
+
 ## 3. Case-Wide Artifact Search
 
 A case-wide search for `ezdevice` returned **144 results**.
