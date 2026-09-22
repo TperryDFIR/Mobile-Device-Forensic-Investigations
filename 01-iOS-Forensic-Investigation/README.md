@@ -22,7 +22,6 @@ The investigation focuses on identifying, examining, and correlating artifacts t
 | [Evidence and Scope](Evidence-and-Scope.md) | iPhone X evidence source, examination scope, and limitations |
 | [Examination Methodology](Examination-Methodology.md) | Forensic tools and procedures used to examine the iOS report |
 | [Artifact Findings](Artifact-Findings.md) | SmartLife application, email, network, and SQLite database artifacts |
-| Findings and Limitations | Final investigative conclusions (in progress) |
 | [Findings and Limitations](Findings-and-Limitations.md) | Final investigative conclusions and examination limitations |
 
 ## Featured Evidence Screenshots
