@@ -50,6 +50,20 @@ The installed-application examination recorded the following information:
 
 **Forensic significance:** This artifact provides a timestamped record of wireless network activity that may support timeline reconstruction. The recorded byte counts do not reveal communication contents, identify the device operator, or independently establish that the ezDevice application generated the traffic.
 
+### Figure 5: DCode Timestamp Conversion
+
+![Figure 5: DCode timestamp conversion](Screenshots/05-DCode-Timestamp-Conversion.png)
+
+**Figure 5.** DCode timestamp-conversion workflow used during the Galaxy S8 forensic examination. This screenshot documents the timestamp input and conversion settings used for the analysis.
+
+### Figure 6: DCode Decoded Timestamp Result
+
+![Figure 6: DCode decoded timestamp result](Screenshots/06-DCode-Decode-Result.png)
+
+**Figure 6.** DCode output showing the decoded timestamp associated with the examined artifact.
+
+**Forensic significance:** Timestamp decoding helps place artifacts into a consistent investigative timeline. The examiner must verify the source timestamp format, conversion settings, and time zone before correlating the result with other device records.
+
 ## 3. Case-Wide Artifact Search
 
 A case-wide search for `ezdevice` returned **144 results**.
