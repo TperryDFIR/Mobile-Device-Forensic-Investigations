@@ -11,13 +11,23 @@ The examination identified application metadata, registration-related emails, ne
 
 ### 1. SmartLife Application Identified
 
-The examined report contained SmartLife application metadata, including version 5.5.4 and application identifier `com.tuya.smartlife`.
+The examined iPhone X report contained SmartLife application metadata, including version 5.5.4, application identifier `com.tuya.smartlife`, and listed HomeKit, Bluetooth, and Camera permissions.
+
+The recorded purchase date was August 27, 2021, at 8:10:16 PM UTC.
+
+These artifacts support application identification and timeline development but do not independently establish when the application was installed or last used on the examined device.
 
 ### 2. Multiple Artifact Sources Supported Correlation
 
-A case-wide search for `smartlife` returned 1,213 results across categories including application usage, emails, log entries, installed applications, and wireless networks.
+The examination identified SmartLife-related wireless-network records, including:
 
-These records provided several avenues for examining SmartLife-related activity rather than relying on a single artifact.
+- `SmartLife-0D13`
+- `SmartLife-1D90`
+- `SmartLife-061D`
+
+The worksheet also recorded associated BSSID and timestamp information.
+
+These artifacts provide potential leads for correlating the iPhone X evidence with IoT equipment. However, the presence of a wireless-network record does not independently establish that the iPhone connected to the network, that a particular IoT device was operated, or that a specific individual performed an action.
 
 ### 3. Email Records Provided Timeline Context
 
@@ -33,7 +43,15 @@ These records may help an examiner investigate connections between the mobile de
 
 ### 5. SQLite Records Provided Additional Detail
 
-Database examination identified records relevant to application and network activity. Timestamp interpretation was necessary to place selected records into a consistent investigative timeline.
+The SQLite database examination identified SmartLife's `Cache.db` and Wyze's `observations.db` within the iPhone X forensic evidence.
+
+The Wyze database examination included the `OperatingDates` and `Observed Domains` tables.
+
+An `amazonaws.com` record contained a `lastSeen` value that was interpreted using DCode with the Unix: Millisecond Value format.
+
+The completed examination worksheet recorded the decoded timestamp as January 30, 2024, at 20:50:05 UTC.
+
+These database artifacts provide additional investigative context and potential timeline reference points. However, the records do not independently establish which application generated a particular network event or whether an IoT device was operated.
 
 ## Examination Limitations
 
@@ -53,3 +71,15 @@ The case demonstrates a repeatable approach to mobile forensic analysis: identif
 ## Evidence Handling and Privacy
 
 This public case study excludes raw mobile extraction data, account credentials, private communications, and unredacted personal information.
+
+## Supporting Evidence and Documentation
+
+The following reports and screenshots support the findings documented in this case study:
+
+- [Evidence and Scope](Evidence-and-Scope.md)
+- [Examination Methodology](Examination-Methodology.md)
+- [Detailed Artifact Findings](Artifact-Findings.md)
+- [SmartLife Installed Application](Screenshots/01-SmartLife-Installed-Application.png)
+- [SmartLife Case-Wide Search](Screenshots/02-SmartLife-Case-Wide-Search.png)
+- [SmartLife Database Search](Screenshots/03-SmartLife-Database-Search.png)
+- [Wyze Observations Database](Screenshots/04-Observations-Database.png)
