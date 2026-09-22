@@ -34,6 +34,14 @@ The installed-application examination recorded the following information:
 
 **Figure 2.** Case-wide search results associated with ezDevice, providing leads for further examination across available artifact categories.
 
+### Figure 3: ezDevice Cookie Artifact
+
+![Figure 3: Redacted ezDevice cookie artifact](Screenshots/03-Cookie-Artifact-REDACTED.png)
+
+**Figure 3.** Cellebrite Reader examination of an NID cookie associated with ezDevice in the Galaxy S8 Physical evidence dataset. The cookie value has been redacted.
+
+**Forensic significance:** The cookie record identifies a source, domain, and timestamps that may support correlation of application and web artifacts. Its presence alone does not establish user attribution or prove a specific browsing action.
+
 ## 3. Case-Wide Artifact Search
 
 A case-wide search for `ezdevice` returned **144 results**.
