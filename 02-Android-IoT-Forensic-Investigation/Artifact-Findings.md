@@ -80,6 +80,14 @@ The installed-application examination recorded the following information:
 
 **Forensic significance:** The artifact demonstrates that account configuration information was present in the examined application data. The field names indicate that the record contained authentication-related information, but the screenshot alone does not establish whether the credentials remained valid, whether a login succeeded, or who operated the account.
 
+### Figure 9: ezOutlet2 Device Information
+
+![Figure 9: Redacted ezOutlet2 device information](Screenshots/09-ezOutlet2-Device-Information-redacted.png)
+
+**Figure 9.** Serialized-data view of an ezOutlet2 device record associated with the Galaxy S8 Physical evidence dataset. The record includes device type, online status, firmware, hardware, network-address fields, a system timestamp, and an HTTP port. Device identifiers and network addresses have been redacted for public documentation.
+
+**Forensic significance:** This artifact provides device-configuration and network information that may support correlation with other Android and IoT evidence. The record reports `online = True`, identifies the device type as `ezOutlet2`, and includes a system timestamp of April 17, 2023, at 8:07:24 PM UTC. The presence of these fields does not independently establish who operated the device, whether it was reachable during the forensic examination, or whether a network connection occurred at that timestamp.
+
 ## 3. Case-Wide Artifact Search
 
 A case-wide search for `ezdevice` returned **144 results**.
